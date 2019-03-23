@@ -1,0 +1,37 @@
+#computers {
+    text-align: center;
+    margin-top: 50px;
+    h1 {
+        color: $text;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    img {
+        width: 50%;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        
+    }
+    a {
+        background-color: $text;
+        text-decoration: none;
+        padding: 10px 40px 10px 40px;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+    }
+    a:hover {
+        background-color: grey;
+        color: $text;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #computers {
+        img {
+            width: 30%;
+        }
+    }
+}
+

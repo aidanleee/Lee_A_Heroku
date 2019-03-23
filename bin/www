@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('lee-a-heroku:server');
+var debug = require('debug')('lee-a-favouritethings:server');
 var http = require('http');
 
 /**
