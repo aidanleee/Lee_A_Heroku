@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 });
 
 // get individual info / bio info
-router.get('/:hero', function(req, res, next) { // req means request, res means result, so request for result 
+router.get('/:computer', function(req, res, next) { // req means request, res means result, so request for result 
   // do a database query and get some of the hero data
   connect.query(`SELECT * FROM computer WHERE name="${req.params.computer}"`, (err, result) => {
     if (err) {
@@ -26,7 +26,7 @@ router.get('/:hero', function(req, res, next) { // req means request, res means 
       console.log(err);
     } else {
       console.log(result);
-      res.render('bio', { bioData: result[0] });
+      res.render('details', { computerData: result[0] });
     }
   });
 });

@@ -9,8 +9,6 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-const port = process.env.PORT || 3000;
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -20,6 +18,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+const port = process.env.PORT || 3000;
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -40,8 +40,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(port, () => {
-  console.log(`app is running on ${port}`);
-});
+//module.exports = app;
 
-module.exports = app;
+app.listen(PORT, () => {
+  console.log(`app is running @ ${port}`);
+});
