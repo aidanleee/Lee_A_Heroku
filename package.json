@@ -1,5 +1,5 @@
 {
-  "name": "lee-a-heroku",
+  "name": "lee-a-favouritethings",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,5 +12,8 @@
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "mysql": "^2.16.0"
   }
 }
