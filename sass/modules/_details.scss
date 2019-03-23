@@ -1,0 +1,37 @@
+#details-cont {
+    h1 {
+        text-align: center;
+        color: $text;
+        letter-spacing: 1px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-top: 40px;
+    }
+}
+
+#details-img {
+    float: left;
+    overflow: hidden;
+    width: 50%;
+    img {
+        width: 100%;
+    }
+
+}
+
+#tech-specs {
+    float: right;
+    width: 50%;
+    color: $text;
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        margin-top: 20px;
+        letter-spacing: 1px;
+    }
+    p {
+        margin-top: 15px;
+    }
+}
+
